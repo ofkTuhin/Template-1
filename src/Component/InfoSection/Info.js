@@ -1,6 +1,9 @@
 import React from 'react';
-import { Button } from 'react-scroll';
+import { Button } from '../Button/ButtonElements'
+// import img1 from '../../images/img4.svg'
+
 import { ImgWrapper,
+    
     Image,
     InfoContainer,
     InfoRow,
@@ -12,32 +15,58 @@ import { ImgWrapper,
     Heading,
     BtnWrapper,SubTitle } from './InfoElements';
 
-const Info = () => {
+const Info = ({
+    id,
+    lightBg,
+    topLine,
+    heading,
+    imgStart,
+    darkText,
+    lightText,
+    primary,
+    dark,
+    description,
+    btnLevel,
+    img,
+    alt
+    
+}) => {
     return (
         <div>
-            <InfoContainer>
+            <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
-                    <InfoRow>
+                    <InfoRow imgStart={imgStart}>
                         <Column1>
                         <TextWrapper>
                             <TopLine>
-                                TopLine
+                                {topLine}
                             </TopLine>
-                            <Heading>
-                                    Heading
+                            <Heading lightText={lightText}>
+                                    {heading}
                                 </Heading>
-                                <SubTitle>
-                                    SubTitle
+                                <SubTitle darkText={darkText}>
+                                    {description}
                                 </SubTitle>
                                 <BtnWrapper>
-                                    <Button/>
+                                    <Button 
+                                    primary={primary ? 1:0}
+                                    dark={dark ? 1: 0}
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact="true"
+                                    offset={-80}
+                                    
+                                    >
+                                        {btnLevel}
+                                    </Button>
                                     
                                 </BtnWrapper>
                         </TextWrapper>
                         </Column1>
                         <Column2>
                         <ImgWrapper>
-                        <Image></Image>
+                        <Image src={img} alt={alt}></Image>
                         </ImgWrapper>
                         </Column2>
                     </InfoRow>

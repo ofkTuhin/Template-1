@@ -2,37 +2,38 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
 color:#fff;
-background:${({lightBg})=>(lightBg ? '#f9f9f9' : '#010606')}
+background-color:${({lightBg})=>(lightBg ? '#f9f9f9' : '#010606')};
 
 @media screen and (max-width:760px){
     padding:100px 0px;
 }
 `
 export const InfoWrapper = styled.div`
-margin:0 auto;
 
-max-width:1100px;
-display:grid;
-z-index:1;
-justify-content:center;
-padding:0px 24px;
-height:860px;
+    z-index: 1;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 100px 24px 0px;
+
+    width: 80%;
+    margin: 0 auto;
 `
 export const InfoRow = styled.div`
 display:grid;
 grid-auto-columns:minmax(auto, 1fr);
 align-item:center;
-grid-template-areas:${({imgStart})=>(imgStart ? `'col2 col1'` : `'col1 col2'`)};
-
+ grid-template-areas:${({imgStart})=>(imgStart ? `'col2 col1'` : `'col1 col2'`)};
 @media screen and (max-width:760px){
-    grid-template-areas:${({imgStart})=>(imgStart ? `'col2' 'col1'` : `'col1 col1' 'col2 col2'`)};
+ grid-template-areas:${({imgStart})=>(imgStart ? `'col2' 'col1'` : `'col1 col1' 'col2 col2'`)};
 }
 `
 
 export const Column1 = styled.div`
 margin-bottom:15px;
 padding:0 15px;
-grid-area:col2;
+grid-area:col1;
 `
 export const Column2 = styled.div`
 margin-bottom:15px;
@@ -57,10 +58,10 @@ margin-bottom:16px;
 `
 export const Heading=styled.h1`
 font-size:48px;
-line-height:1.1px;
+line-height:1.1;
 margin-bottom:20px;
 font-weight:600;
-color:${({lightText})=>(lightText ? '#f7f8fa' : '#010606')}
+color:${({lightText})=>(lightText ? '#f7f8fa' : '#010606')};
 
 @media screen and (max-width:480px){
     font-size:32px;
@@ -72,7 +73,7 @@ export const SubTitle=styled.p`
 max-width:440px;
 font-size:18px;
 line-height:24px;
-color:${({darkText})=>(darkText ? "#010606" : '#ffff')};
+color:${({darkText})=>(darkText ? '#010606' : '#ffff')};
 margin-bottom:24px;
 `
 

@@ -12,12 +12,13 @@ border:none;
 display:flex;
 align-items:center;
 justify-content:center;
-pointer:cursor;
+cursor:pointer;
 font-size:${({fontBig})=>(fontBig ? '20px' : '16px')};
 transition: all 0.2s ease-in-out;
 
 &:hover{
     transition: all 0.2s ease-in-out;
-    background:${({primary})=>(primary ? '#ffff' : '#01BF71')};
+    background:${({primary})=>(primary ? '#010606' : '#01BF71')};
+    color:${({dark})=>(dark ? '#ffff' : '#010606')};
 }
 `

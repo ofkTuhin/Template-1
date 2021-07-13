@@ -21,7 +21,7 @@ const Banner = () => {
 
               </BannerP>
               <BannerBtnWrapper>
-                  <Button onMouseEnter={onHover} onMouseLeave={onHover}> Get started {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
+                  <Button onMouseEnter={onHover} onMouseLeave={onHover} primary dark> Get started {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
               </BannerBtnWrapper>
               </BannerContent>
               </BannerContainer>  
