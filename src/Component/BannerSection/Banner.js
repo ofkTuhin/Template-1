@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BannerBg, BannerContainer, VideoBg,BannerBtnWrapper,BannerContent,BannerH1,BannerP,ArrowForward,ArrowRight} from './BannerElement';
 import video from '../../video/video.mp4'
 import { Button } from '../Button/ButtonElements';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     const [hover,setHover]=useState(false)
@@ -21,7 +22,7 @@ const Banner = () => {
 
               </BannerP>
               <BannerBtnWrapper>
-                  <Button onMouseEnter={onHover} onMouseLeave={onHover} primary dark> Get started {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
+                 <Button onMouseEnter={onHover} onMouseLeave={onHover} primary dark> Get started {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
               </BannerBtnWrapper>
               </BannerContent>
               </BannerContainer>  

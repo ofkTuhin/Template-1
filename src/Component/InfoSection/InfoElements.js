@@ -5,7 +5,7 @@ color:#fff;
 background-color:${({lightBg})=>(lightBg ? '#f9f9f9' : '#010606')};
 
 @media screen and (max-width:760px){
-    padding:100px 0px;
+    padding:60px 0px;
 }
 `
 export const InfoWrapper = styled.div`
@@ -19,6 +19,9 @@ export const InfoWrapper = styled.div`
 
     width: 80%;
     margin: 0 auto;
+    @media screen and (max-width:760px){
+        padding:0px 0px;
+    }
 `
 export const InfoRow = styled.div`
 display:grid;

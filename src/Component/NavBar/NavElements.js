@@ -5,15 +5,14 @@ import{ Link as LinkS} from 'react-scroll'
 export const Nav =styled.nav`
 background: #000;
 height: 80px;
-display:flex;
-justify-content:center;
-align-items:center;
+display:block
 position:sticky;
 top:0;
 z-index:10;
 
 
-@media screen nad(max-width:960px){
+
+@media screen and (max-width:960px){
     transition: 0.8s all ease;
 }
 `
@@ -24,8 +23,8 @@ display:flex;
 justify-content:space-between;
 height:100%;
 z-index:1;
-width:100%;
-max-width:1100px;
+
+
 padding:0px 25px;
 align-items:center;
 
@@ -73,7 +72,7 @@ margin-right:-22px;
 export const NavItem=styled.li`
 height:80px;
 `
-export const NavLink=styled(LinkS)`
+export const NavLink=styled.a`
 display:flex;
 align-items:center;
 padding:0 16px;
