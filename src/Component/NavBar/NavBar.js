@@ -19,27 +19,35 @@ const NavBar = ({toggle}) => {
                     
                     <NavItem>
                     
-                        <Link to="/">
+                       
                         <NavLink to='home'>
-                            Home
+                          About 
                         </NavLink>
-                        </Link>
+                       
                          </NavItem>
                     
                     <NavItem>
                         <NavLink to='home'>
-                            Home
+                            Discover
                         </NavLink>
                         
 
                     </NavItem>
                     <NavItem>
                         <NavLink to='/home'>
-                            Home
+                            Services
                         </NavLink>
                         
 
                     </NavItem>
+                    <NavItem>
+                        <NavLink to='/home'>
+                            Sign in
+                        </NavLink>
+                        
+
+                    </NavItem>
+                    
                 </NavMenu>
                 
                 <NavBtn>

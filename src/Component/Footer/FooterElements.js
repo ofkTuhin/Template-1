@@ -22,7 +22,7 @@ export const FooterLinkWrapper = styled.div`
 width: 22%;
 box-sizing: border-box;
 padding: 0px 10px;
-height: 200px;
+height: 210px;
 @media screen and (max-width:760px){
     width:45%;
     width: 45%;
@@ -49,3 +49,32 @@ height: 200px;
  color:#f9f9f9;
 
  `
+ export const LowFooter = styled.div`
+ width: 100%;
+ padding: 0px 0px;
+ background: #010606cf;
+ `
+ export const LowFooterWrapper = styled.div`
+ width:80%;
+ margin:0px auto;
+ display:flex;
+ flex-wrap:wrap;
+ align-items: center;
+ justify-content:space-between;
+ `
+ export const FooterLogo = styled.h2`
+ font-size:30px;
+ color:#f9f9f9;
+ `
+  export const CopyWright = styled.p`
+  color:white;
+  `
+  export const SocialWrapper = styled.div`
+  display:flex;
+  `
+  export const SocialLink = styled(Link)`
+  text-decoration:none;
+  font-size:20px;
+ padding:0px 10px;
+ color:white;
+  `

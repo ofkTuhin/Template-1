@@ -1,5 +1,7 @@
 import React from 'react';
 import { footerData } from './FooterData';
+
+
 import { FooterContainer,
     FooterLink,
     FooterLinkContainer,
@@ -7,6 +9,7 @@ import { FooterContainer,
     FooterLinkTitle,
     FooterLinkWrapper,
     FooterWrapper,
+    
     
  }
   from './FooterElements';
@@ -39,7 +42,9 @@ const Footer = () => {
                      })
                  }
               </FooterWrapper>
+             
               </FooterContainer> 
+            
         </>
     );
 };
